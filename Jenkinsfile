@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..';
-				dir	;
+				bat 'dir'	
             }
         }
         stage('Test') {
