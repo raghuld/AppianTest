@@ -1,16 +1,18 @@
-def scriptFileLocation
 pipeline {
     agent any
 
     stages {
         stage('Build') {
             steps {
+			script{
 			echo 'Building..'
-			scriptFileLocation='C:/Users/raghuld/POC Github Jenkins/Deployment Automation Manager/appian-adm-versioning-client-2.5.12'
+			def scriptFileLocation='C:/Users/raghuld/POC Github Jenkins/Deployment Automation Manager/appian-adm-versioning-client-2.5.12'
 			bat 'dir'
 			echo " My Script location ${scriptFileLocation}"
-			bat "cd ${scriptFileLocation}"
-
+			bat "copy ${scriptFileLocation}"
+			bat 'dir'
+			bat 'version-application.bat'
+			}
             }
         }
         stage('Test') {
