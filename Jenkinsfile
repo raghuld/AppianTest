@@ -6,9 +6,10 @@ pipeline {
         stage('Build') {
             steps {
 			echo 'Building..'
-			scriptFileLocation='C:\Users\raghuld\POC Github Jenkins\Deployment Automation Manager\appian-adm-versioning-client-2.5.12\version-manager.properties'
+			scriptFileLocation='C:/Users/raghuld/POC Github Jenkins/Deployment Automation Manager/appian-adm-versioning-client-2.5.12'
 			bat 'dir'
 			echo " My Script location ${scriptFileLocation}"
+			bat "cd ${scriptFileLocation}"
 
             }
         }
