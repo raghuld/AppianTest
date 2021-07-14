@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				def scriptFileLocation='Hello';
-				echo "My variable is ${scriptFileLocation}";
+				def scriptFileLocation='Hello'
+				echo "My variable is ${scriptFileLocation}"
 
             }
         }
