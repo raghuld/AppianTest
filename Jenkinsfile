@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-				sh 'dir'
+                echo 'Building..';
+				dir	;
             }
         }
         stage('Test') {
