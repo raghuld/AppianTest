@@ -3,14 +3,14 @@ pipeline {
     agent any
 
 	parameters {
-        string(name: 'vcUsername', description: 'Git User Name')
-        string(name: 'vcPassword', description: 'Git Password')
-        string(name: 'repoUrl', description: 'Git URL')
-        string(name: 'uuid', description: 'Application UUID to generate package')
-		string(name: 'applicationPath', description: 'Path to generate package and import')
-		string(name: 'appianURL', description: 'Appian URL ending with suite')
-		string(name: 'appianUsername', description: 'Appian Username')
-		string(name: 'appianPassword', description: 'Appian Password')
+        string(name: 'vcUsername', description: 'Git User Name',defaultValue: 'raghuld')
+        string(name: 'vcPassword', description: 'Git Password',defaultValue: 'balaji*98')
+        string(name: 'repoUrl', description: 'Git URL',defaultValue: 'https://github.com/raghuld/AppianTest')
+        string(name: 'uuid', description: 'Application UUID to generate package',defaultValue: '_a-0000e323-440f-8000-61d0-01ef9001ef90_142549')
+		string(name: 'applicationPath', description: 'Path to generate package and import',defaultValue: 'C:\\\\Users\\\\raghuld\\\\Downloads\\\\Stopwatch Timer Component Samples - Update Patch package - 2021-07-15_1606.zip')
+		string(name: 'appianURL', description: 'Appian URL ending with suite',defaultValue: 'https://vuramusdemo.appiancloud.com/suite')
+		string(name: 'appianUsername', description: 'Appian Username',defaultValue: 'raghuld@vuram.com')
+		string(name: 'appianPassword', description: 'Appian Password',defaultValue: 'test124')
     }
     stages {
         stage('Build') {
