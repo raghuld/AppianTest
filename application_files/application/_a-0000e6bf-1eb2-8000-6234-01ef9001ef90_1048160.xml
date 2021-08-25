@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <applicationHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <versionUuid>_a-0000e6bf-1eb2-8000-6234-01ef9001ef90_1048245</versionUuid>
+    <versionUuid>_a-0000e6d3-139b-8000-623e-01ef9001ef90_1193764</versionUuid>
     <application>
         <name>CK Project</name>
         <uuid>_a-0000e6bf-1eb2-8000-6234-01ef9001ef90_1048160</uuid>
@@ -47,6 +47,7 @@
                         <uuid>_a-0000e6bf-1eb2-8000-6234-01ef9001ef90_1048173</uuid>
                         <uuid>_a-0000e6bf-1eb2-8000-6234-01ef9001ef90_1048180</uuid>
                         <uuid>_a-0000e6bf-1eb2-8000-6234-01ef9001ef90_1048239</uuid>
+                        <uuid>_a-0000e6d3-139b-8000-623e-01ef9001ef90_1193759</uuid>
                     </uuids>
                 </item>
                 <item>
@@ -264,6 +265,7 @@
     </roleMap>
     <history>
         <historyInfo versionUuid="_a-0000e6bf-1eb2-8000-6234-01ef9001ef90_1048245"/>
+        <historyInfo versionUuid="_a-0000e6d3-139b-8000-623e-01ef9001ef90_1193764"/>
     </history>
     <postDeploymentProcessData/>
-</applicationHaul><!--updated on 2021-08-20T14:53:21.880-->
+</applicationHaul><!--updated on 2021-08-25T10:49:41.276-->
